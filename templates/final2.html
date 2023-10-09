@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style4.css'%}">
+    <title>Document</title>
+    <style media="screen">
+
+    *{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+}
+.container{
+  max-width: 950px;
+  width: 90%;
+  margin: 0 auto;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+body{
+  margin: 0px;
+  padding: 0px;
+}
+#blog{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px;
+}
+.blog-heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.blog-heading span{
+  color: #f33c3c;
+}
+.blog-heading h3{
+  font-size: 2.4rem;
+  color: #2b2b2b;
+  font-weight: 600;
+}
+.blog-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+  flex-wrap: wrap;
+}
+.blog-box{
+  width: 950px;
+  background-color: #ffffff;
+  margin: 20px;
+}
+.blog-img{
+  width: 100%;
+  height: auto;
+}
+.blog-img img{
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+}
+.blog-text{
+  display: flex;
+  padding-bottom: 20px;
+  flex-direction: column;
+}
+.blog-text span{
+  color: #f33c3c;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+.blog-text .blog-title{
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #272727;
+}
+.blog-text .blog-title:hover{
+  color: #f33c3c;
+  transition: all ease 0.3s;
+}
+.blog-text p{
+  color: #9b9b9b;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 20px 0px;
+  border-left: 2px solid black;
+  padding-left: 4px;
+}
+.blog-text a{
+  color: #0f0f0f;
+}
+.blog-text a:hover{
+  color: #f33c3c;
+  transition: all ease 0.3s;
+}
+.blog-content-heading p{
+  font-size: 1.4rem;
+}
+.blog-content-heading h2{
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+}
+.blog-content-heading h1{
+  font-size: 1.9rem;
+  margin-bottom: 3rem;
+}
+.blog-content-heading li{
+  font-size: 1.4rem;
+}
+.blog-content-heading ul{
+  margin-left: 3rem;
+}
+.blog-content-heading ul li{
+  margin-left: 3rem;
+  list-style-type:circle ;
+}
+    </style>
+</head>
+<body>
+    <section id="blog">
+        <div class="blog-heading">
+            <span>My Recent Posts</span>
+            <h3>My Blog</h3>
+        </div>
+
+        <div class="blog-container">
+            <div class="blog-box">
+                <div class="blog-text">
+                    <h1>Major Differences between a Psychologist and a Psychiatrist</h1>
+                        <span>Mohar Bhattacharjee - Monday 22nd August 2022</span>
+                        <p>Articles</p>
+                </div>
+                <div class="blog-img">
+                    
+                      <img src ="{% static 'images/problem.jpg' %}">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="content">
+        <div class="blog-content-heading container">
+            <p>Even though a psychologist and a psychiatrist seem like they do the same work, they have notable differences. Generally, both the experts are trained to take care of the mental health of people. Nonetheless, both professions differ in terms of educational background, training phases, and roles in treatment.</p><br><br><br>
+            <p>Psychiatrists are addressed as "medical doctors" and they hold advanced degrees, including specialization in psychiatry. Medications, talk therapy, and related tools are their primary means of interacting with patients suffering from mental health issues. In the same way, psychologists are Ph.D. or PsyD degree holders and include talk therapy in their treatment. They are some consultants who look after the mental health issues of their patients.</p><br><br>
+            <p>This blog focuses on bringing out the major differences between a psychologist and a psychiatrist. </p><br><br>
+            <h1>Who are Psychologists? What Do They Do?</h1>
+            <p>Psychologists mainly seek to understand and describe mental processes such as thoughts, feelings, emotions, and behavioral traits. They focus on developing different tools and techniques like observation, evaluation, and experimentation to create theories about the typical thoughts or beliefs that might affect or influence an individual.</p><br><br><br>
+            <p>Psychologists are responsible for carrying out psychological testing and diagnostic interviews, including individual and group therapy. For patient treatment and care, they may even consult with other professionals. They might also interact with family members or close acquaintances of the patient. Moreover, they carry out verbal interviews and observation sessions to diagnose the issues properly and develop suitable treatment plans.</p><br><br><br>
+            <p>Their primary roles are:</p><br><br><br>
+            <ul>
+                <li>Conducting psychological assessment to provide treatment</li>
+                <li>Changing treatment actions as per the patients requirements
+                </li>
+                <li>Assist patients thoroughly through different treatment regimens like group therapy and psychotherapy. </li>
+            </ul><br><br><br>
+            <p>Read How to Become a Psychologist in India to know more about becoming a psychologist, its scope, and salary.</p><br><br><br>
+            <h2>Who are Psychiatrists? What Do They Do?</h2>
+            <p>Psychiatry is an important branch of medicine that focuses on evaluating, treating, and preventing mental, emotional, or behavioral complexities. Psychiatrists are medical doctors who are experts in mental health problems. They have licensed doctors to evaluate both the mental and physical parameters of psychological issues. An individual can seek a psychiatrists consultation in this case:
+            </p><br><br><br>
+            <ul>
+                <li>suffering from panic attacks</li>
+                <li>extreme hallucination</li>
+                <li>severe anxiousnesse</li>
+                <li>hopelessness</li>
+            </ul><br><br>
+            <p>The list isnt only limited to the above aspects. We tried to bring out some of the major reasons for seeing a psychiatrist, and there can be plenty.</p><br><br><br>
+            <p>A psychiatrist meets with the patient to diagnose the mental disorders and provide suitable medication after that. A psychiatrist is generally consulted in cases where the patient is suffering from a terrible mental condition or severe depression that can be treated only through medication or powerful therapy.</p><br><br><br>
+            <h1>What is the difference between a psychologist and a psychiatrist?
+            </h1>
+                <p>Now comes the most crucial aspect of the blog, where we will analyze the major differences between a psychiatrist and a psychologist. The two notable distinguishing parameters between these two parameters are their respective areas of expertise and practice and educational background. While both professions mostly deviate to a similar extent, the difference in medication marks the major hurdle between the two. However, with additional qualifications, psychologists can prescribe medications.</p><br>
+                <h2>Practice Areas</h2>
+                <p> <span>Psychologists:</span> The primary role of a psychologist involves looking after the mental health of their patients through observations, talk therapy, and surveys. The major difference with psychiatry is that they are not eligible to prescribe medication to their patients. However, with increased advanced qualifications, they are eligible to prescribe medications in a few states outside India. They generally work in the following settings: </p><br>
+                <ul>
+                    <li>Hospitals</li>
+                    <li>Nursing Homes</li>
+                    <li>Nursing Homes</li>
+                    <li>Prisons</li>
+                    <li>Prisons</li>
+                    <li>Rehabilitation centres </li>
+                    <li>Hospice programs</li>
+                </ul><br>
+                <p>Their treatment tools mainly include talk therapy. The series involves direct communication with the patient, and after a specific tenure, the psychologist helps the patient understand his issues better and guides them accordingly. A common therapy that they usually go for is cognitive behavioural therapy. It is helpful for people with negative thoughts and assists them in overcoming them. Talk therapy can come in any form that might include:</p><br><br>
+                <ul>
+                    <li>Family Therapy</li>
+                    <li>Group Therapy</li>
+                    <li>Face-to-face sessions with the therapist</li>
+                </ul><br>
+                <p>While evaluating children, they might try to get an insight into other segments like academic sides and cognitive functioning. A big difference between a psychologist and a psychiatrist is that the former often imitates play therapy with children, allowing them to play in a secure playroom with few rules. Watching the childrens behaviour during play, the psychologist usually gets an idea of their issues and what the reasons behind their botherations are. Accordingly, they help the kids with communication skills, problem-solving capabilities, and other behavioural traits.</p><br><br><br>
+                <p> <span>Psychiatrists:</span>They are responsible for treating people with mental health issues that need medication. In many cases, some issues that might include:</p><br>
+                <ul>
+                    <li>Anxiety disorder</li>
+                    <li>Bipolar disorder</li>
+                    <li>Severe depression</li>
+                    <li>Attention deficit hyperactivity disorder (ADHD)</li>
+                    <li>Schizophrenia</li>
+                    <li>Post-traumatic Stress Disorder (PTSD)</li>
+                </ul><br>
+                <p>A psychiatrist assesses these complications using any of the methods, like psychological examinations and one-on-one assessments. They carry out lab tests too, to eliminate any physical causes of the symptoms. After diagnosis, they can provide their patients with suitable medication or even refer them to a psychotherapist to get into a therapeutic session for better results. Some commonly prescribed psychiatrist medications might include sedatives, antidepressants, mood stabilizers, stimulants, antipsychotic medicines, etc. After prescribing, the psychiatrist closely observes the patient and, based on the results, might modify his medication.</p><br><br>
+                <p>Based on the patients condition, the psychiatrist might even refer to other medication forms, like <span> Implying the application of an electrical current to the patients brain.</span> This measure is only adopted in the case of extreme depression where any other means fail.</p><br>
+                <p> <span>Light Therapy:</span> This method involves the application of artificial light to cure seasonal depression, especially in areas that dont receive a lot of sunlight. </p><br>
+                <p>While treating child patients, the psychiatrist develops a comprehensive assessment plan to diagnose the patient that might involve:</p><br><br>
+                <ul>
+                    <li>Medication</li>
+                    <li>Talk therapy (individual, group, or family)</li>
+                    <li>Consulting with other experts, social agencies, or community settings</li>
+                </ul><br>
+                <p>Through this evaluation, they get to evaluate the issue related to the childs mental health.</p><br>
+                <ul>
+                    <li>Hospitals</li>
+                    <li>Psychiatric centers</li>
+                    <li>Prisons</li>
+                    <li>Nursing homes </li>
+                    <li>Private Practice</li>
+                </ul><br>
+                <h1>Educational Background</h1>
+                <p>Another significant distinguishing factor between a psychologist and a psychiatrist is their educational background.</p><br><br><br>
+                <p><span>Psychologists: After pursuing graduation, a psychologist earns either a Doctor of Philosophy (Ph.D.) or a Doctor of Psychology (PsyD).</span> It might take up to four to six years to complete the respective paths. After completing the same, they need to undergo at least two years of training and work with people to learn the diagnosis of related issues. The final step involves taking a test to get their license. Some psychologists even get a specialization in:</p><br><br><br>
+                <ul>
+                    <li>Clinical Psychology</li>
+                    <li>Forensic Psychology</li>
+                    <li>Geropsychology</li>
+                    <li>Psychoanalysis</li>
+                    <li>Child and Adolescent Psychology</li>
+                </ul><br>
+                <p><span>Psychiatrists: They either graduate with a Doctor of Medicine (MD) or, a Doctor of Osteopathic Medicine (DO).</span>Once they pursue their degree, they attempt a written examination to obtain a license in their respective states to practice medicine. A four-year residency is mandatory to be a licensed practitioner. During this tenure, they generally work in hospitals to learn and observe the diagnosis of mental health issues through therapy, medicine, etc. Some professionals even acquire specialization and that can be in:</p><br>
+                <ul>
+                    <li>Sleep medicine</li>
+                    <li>Pain medicine</li>
+                    <li>Adolescent and child psychiatry</li>
+                    <li>Addiction medicine</li>
+                    <li>Geriatric psychiatry</li>
+                </ul><br>
+                <h1>Who earns more, psychologist or psychiatrist?</h1>
+                <p>The salary structure for both professions is indeed lucrative, and thats a good reason for anyone to pursue a career in a related field.</p><br><br><br>
+                <p>Indian psychologists make up to INR 404,743/year on average. A clinical psychologist can earn up to INR 489,433/year on average, while for cognitive and behavioural therapy it can be up to INR 395,479/year on average.</p><br>
+                <p>The average base salary of Indian psychiatrists is INR 983,766/year. The average salary for patient counselling can be up to INR 970,039/year, while for diagnosis and treatment planning it can be up to INR 1,027,894/year.</p><br>
+                <h1>Are psychologists doctors?</h1>
+                <p>A common confusion most people have is whether psychologists are doctors. No, psychologists are not medical doctors. Psychiatrists are medical professionals.
+                    Psychologists can do a masters in psychology or a Ph.D. for a doctorate in psychology.</p><br><br><br>
+                <h1>Career as a Psychologist or a Psychiatrist?</h1>
+
+                <p>Now, if you want a career in psychology but dont know which one to choose between the above two, its time to consult a professional. At your service, Edumilestones brings this opportunity to interact with industry experts and get a clear idea about your vision. Follow the simple steps below to schedule an interview with the career counsellors and have your doubts solved. </p><br>
+                <h2>Wrapping Up</h2>
+                <p>I think this blog could clear your major doubts regarding the differences between a psychiatrist and a psychologist. If you are having difficulty making a career-related decision, professionals are always available to seek help. Always choose accordingly! See you on another blog soon!</p><br><br><br><br>
+        </div>
+
+    </section>
+</body>
+</html>

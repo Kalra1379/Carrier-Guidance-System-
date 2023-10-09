@@ -1,0 +1,106 @@
+<!-- <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+
+
+  <body>
+
+<p>The Result is{{ans}} </p>
+  <a href="{% url 'home' %}">Click here to go back</a>
+  </body>
+  <form action="{% url 'result1' %}" >
+    Enter how many hours you study:
+    <input type="number" required name="Study_hour" >
+    <br><br>
+      <input type="submit" name="" value="submit">
+</form>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+    --heading: rgb(0, 10, 40);
+    --para: #777;
+    --bg: rgb(249 249 255);
+    --shadow: 0px 0px 20px 0px rgb(132 144 255 /20%);
+    --gradient: linear-gradient(0deg, rgb(132 144 255)0%, rgb(98 189 252)100%);
+}
+        .hour-wrapper{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin-top: 15rem;
+            margin-left: 30rem;
+            background-color:  rgb(132 144 255);
+            padding: 2rem;
+            padding-top: 4rem;
+            border-radius: 1rem;
+            width: 30%;
+            box-shadow: 2px 2px 10px rgb(89, 89, 89);
+        }
+        .hours p{
+            font-size: 1.5rem;
+            margin-bottom: 4rem;
+        }
+        .hour-submit1 input{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            display: block;
+            width: 60%;
+            border: none;
+            border-bottom: 2px solid #ddd;
+            /* padding: 1.1rem 0; */
+            box-shadow: none;
+            outline: none;
+            color: #444;
+            font-weight: 500;
+            margin-top: -1.7rem;
+            margin-bottom: 1rem;
+            margin-left: 5.5rem;
+            background-color:  rgb(132 144 255);
+        }
+        .hour-submit2 input{
+            align-items: center;
+            text-align: center;
+            padding: .5rem;
+            border-radius: 10px;
+            border-color:  rgb(110, 129, 241);
+            font-size: 1.3rem;
+            color: rgb(110, 129, 241);
+            background-color:#fff;
+        }
+    </style>
+</head>
+<body>
+  <p>The Result is{{ans}} </p>
+    <a href="{% url 'home' %}">Click here to go back</a>
+
+    <form class="container1" action="{% url 'result1' %}" >
+        <div class="hour-wrapper">
+            <div class="hours">
+                <p>Enter how many hours you study:</p>
+            </div>
+            <div class="hour-submit1">
+                <input type="number" required name="Study_hour" >
+            </div>
+            <div class="hour-submit2">
+                <br><br>
+                <input type="submit" name="" value="submit">
+            </div>
+
+            </div>
+        </div>
+    </form>
+</body>
+</html>

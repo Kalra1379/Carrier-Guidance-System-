@@ -1,0 +1,165 @@
+{% include "header.html" %}
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-books</title>
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+    <!-- bootstrap css link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style media="screen">
+    .ebooks .grid .card img{
+      height: 17rem;
+    }
+
+    .ebooks{
+      margin: 7rem;
+    }
+
+    .header{
+      margin-top: 1rem;
+      height: 3rem;
+    }
+
+    .header .logo img{
+      width: 50px;
+      height: 50px;
+    }
+
+    .navbar .nav-list .nav-item a{
+      font-size: 1rem;
+    }
+
+    .navbar .nav-list .nav-item a .button1{
+      font-size: 1rem;
+    }
+
+    .navbar .nav-list .nav-item a .button2{
+      font-size: 1rem;
+    }
+    </style>
+</head>
+
+<body>
+
+<section class="ebooks">
+
+
+
+<div class="grid grid-three-coloumn">
+
+
+  <div class="card" style="width: 18rem;">
+  <img src ="{% static 'images/ebook2.jpg' %}">
+    <div class="card-body">
+      <h5 class="card-title">Carrer Path Book</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="http://www.borbelytiborbors.extra.hu/ZSKF/CareerDevelopment.pdf"target="blank" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+
+
+  <div class="card" style="width: 18rem;">
+    <img src ="{% static 'images/ebook3.jpg' %}">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="http://www.ergen.gr/files/Smart_Thinking_Skills.pdf" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+
+
+
+  <div class="card" style="width: 18rem;">
+    <img src ="{% static 'images/ebook4.jpg' %}">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="http://www.borbelytiborbors.extra.hu/ZSKF/CareerDevelopment.pdf" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+
+
+  <div class="card" style="width: 18rem;">
+    <img src ="{% static 'images/ebooks6.jpg' %}">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="http://www.rawanonline.com/wp-content/uploads/2012/09/Psychology-A-Self-Teaching-Guide-English.pdf" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+
+
+
+  <div class="card" style="width: 18rem;">
+
+    <img src ="{% static 'images/ebooks.jpg' %}">
+
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="http://www.ergen.gr/files/Smart_Thinking_Skills.pdf" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+
+
+
+  <div class="card" style="width: 18rem;">
+  <img src ="{% static 'images/ebook3.jpg' %}">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="http://www.borbelytiborbors.extra.hu/ZSKF/CareerDevelopment.pdf" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+
+
+
+  <div class="card" style="width: 18rem;">
+  <img src ="{% static 'images/ebook2.jpg' %}">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="http://www.rawanonline.com/wp-content/uploads/2012/09/Psychology-A-Self-Teaching-Guide-English.pdf" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+
+
+  <div class="card" style="width: 18rem;">
+  <img src ="{% static 'images/ebook3.jpg' %}">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="http://www.ergen.gr/files/Smart_Thinking_Skills.pdf" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+
+
+  <div class="card" style="width: 18rem;">
+  <img src ="{% static 'images/ebooks.jpg' %}">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="http://www.ergen.gr/files/Smart_Thinking_Skills.pdf" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+
+</div>
+
+<script type="text/javascript">
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</script>
+
+</body>
+
+</section>
+
+</html>

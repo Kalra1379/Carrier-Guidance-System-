@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style4.css'%}">
+    <title>Document</title>
+    <style media="screen">
+
+    *{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+}
+.container{
+  max-width: 950px;
+  width: 90%;
+  margin: 0 auto;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+body{
+  margin: 0px;
+  padding: 0px;
+}
+#blog{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px;
+}
+.blog-heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.blog-heading span{
+  color: #f33c3c;
+}
+.blog-heading h3{
+  font-size: 2.4rem;
+  color: #2b2b2b;
+  font-weight: 600;
+}
+.blog-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+  flex-wrap: wrap;
+}
+.blog-box{
+  width: 950px;
+  background-color: #ffffff;
+  margin: 20px;
+}
+.blog-img{
+  width: 100%;
+  height: auto;
+}
+.blog-img img{
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+}
+.blog-text{
+  display: flex;
+  padding-bottom: 20px;
+  flex-direction: column;
+}
+.blog-text span{
+  color: #f33c3c;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+.blog-text .blog-title{
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #272727;
+}
+.blog-text .blog-title:hover{
+  color: #f33c3c;
+  transition: all ease 0.3s;
+}
+.blog-text p{
+  color: #9b9b9b;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 20px 0px;
+  border-left: 2px solid black;
+  padding-left: 4px;
+}
+.blog-text a{
+  color: #0f0f0f;
+}
+.blog-text a:hover{
+  color: #f33c3c;
+  transition: all ease 0.3s;
+}
+.blog-content-heading p{
+  font-size: 1.4rem;
+}
+.blog-content-heading h2{
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+}
+.blog-content-heading h1{
+  font-size: 1.9rem;
+  margin-bottom: 3rem;
+}
+.blog-content-heading li{
+  font-size: 1.4rem;
+}
+.blog-content-heading ul{
+  margin-left: 3rem;
+}
+.blog-content-heading ul li{
+  margin-left: 3rem;
+  list-style-type:circle ;
+}
+    </style>
+</head>
+<body>
+    <section id="blog">
+        <div class="blog-heading">
+            <span>My Recent Posts</span>
+            <h3>My Blog</h3>
+        </div>
+
+        <div class="blog-container">
+            <div class="blog-box">
+                <div class="blog-text">
+                    <h1>How can Girls Join Indian Airforce or Army after 12th?</h1>
+                        <span>Mohar - Tuesday 31st August 2021 </span>
+                        <p>Articles</p>
+                </div>
+                <div class="blog-img">
+                  
+                      <img src ="{% static 'images/problem.jpg' %}">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="content">
+        <div class="blog-content-heading container">
+            <p>Till 1992, Indian women didn’t have the scope to be a part of the Indian Defense Forces. However, the rule came to an end in 1992 and the defense sectors opened the doors for Indian females to be a part of the Indian Army, Airforce, or Navy and take part in actions.</p><br><br><br>
+            <p>Are you among those brave girls who aspire to serve the nation one day?</p><br><br>
+            <p>Do you want to invest your time serving your nation but are unaware of the routes?</p><br><br>
+            <p>Don’t worry, we are here to help you with the same.</p><br><br>
+            <p>Joining the Indian Army requires a minimum qualification of being a graduate. As per the Short Service Commission scheme, females willing to be a part of the Indian Army can serve for fourteen years. They are free to enter different branches like Medical, Engineering, Law, and others. The routes to join the Indian Army are three namely:</p><br><br>
+            <h1>Indian Army</h1>
+            <p>Joining the Indian Army requires a minimum qualification of being a graduate. As per the Short Service Commission scheme, females willing to be a part of the Indian Army can serve for fourteen years. They are free to enter different branches like Medical, Engineering, Law, and others. The routes to join the Indian Army are three namely:</p><br><br><br>
+            <ul>
+                <li>Graduate UPSC (Non-Technical)</li>
+                <li>Graduate UPSC (Technical)</li>
+                <li>Graduate Non-UPSC</li>
+            </ul><br><br><br>
+            <p>There’s a process to apply for these posts through the official website of the Indian Army. After application, shortlisted candidates need to move through a set of processes to be finally able to join the prestigious Indian Army. Let us discuss the three routes in detail with the respective eligibility criteria for each.</p><br><br><br>
+            <h1>Graduate UPSC (Non-Technical)</h1>
+            <p>Every year, the UPSC conducts a recruitment examination to select eligible candidates in the non-technical post. The process generally takes place twice a year, in February and September. Candidates performing well in the written exam are eligible for the further interview round conducted by Service Selection Board (SSB). The posts coming under UPSC Non-Technical branch are:
+            </p><br><br><br>
+            <ul>
+                <li>Indian Foreign Service</li>
+                <li>The Indian Administrative Service</li>
+                <li>Indian Audit and Accounts Service Group A</li>
+                <li>Indian Postal Service Group A </li>
+                <li>Indian Revenue Service (IT) Group A </li>
+                <li>Indian Revenue Service (Customs & Central Excise) Group A </li>
+                <li>Indian Civil Accounts Service Group A </li>
+                <li>Indian Railway Account Service Group A </li>
+                <li>Indian Railway Personnel Service Group A </li>
+                <li>The Indian Defence Estates Service Group A </li>
+                <li>Indian Corporate Law Service Group A</li>
+                <li>Delhi, Andaman and Nicobar Islands Civil Service Group B.</li>
+            </ul><br><br>
+            <p>Candidates aspiring to take on the UPSC Non-Technical route, need not fulfill the physical standards for the UPSC Civil Services exam. However, there is a set of eligibility criteria that the aspirant must pass.</p><br><br><br>
+            <h1>Eligibility Criteria</h1>
+                <p>The female aspirants must be graduates from a recognized university and fall between the age group of 19 and 25 years. Also, they need to be unmarried.</p><br>
+                <h1>Graduate UPSC (Technical)</h1>
+                <p>The conducting authority selects female candidates in the UPSC Technical branch entirely based on merit and so far there isn’t any record for written examination. The shortlisting is done based on the cut-off percentage that is applied to the candidate’s marks that they receive till the sixth semester in college. The UPSC Technical posts include:</p><br>
+                <ul>
+                    <li>The Indian Railway Traffic Service Group A </li>
+                    <li>Indian Police Service (IPS) Group A</li>
+                    <li>Railway Protection Force (RPF) Group A</li>
+                    <li>Pondicherry Police Service Group B </li>
+                    <li>Delhi, Andaman and Nicobar Islands Police Service Group B</li>
+                </ul><br>
+                <p>The female aspirants need to fulfill certain basic eligibility requirements to be able to place their applications for the UPSC Technical post. They need to be between 20 and 27 years of age and should be unmarried.</p><br><br>
+
+                <h3>Graduate Non-UPSC </h3>
+                <p>There are two categories under the Graduate Non-UPSC category: National Cadet Corps, Judge Advocate General. Let us discuss these sub-branches in detail now.</p><br><br><br>
+              <h3>Wrapping Up</h3>
+              <p>This was all about the process to join the Indian Army or the Indian Air Force as a female candidate. We wish you all the luck in your endeavor.</p><br><br><br>
+        </div>
+
+    </section>
+</body>
+</html>

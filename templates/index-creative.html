@@ -1,0 +1,346 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from avehtml.liquid-themes.com/index-creative.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 17 Apr 2021 13:14:00 GMT -->
+<!-- Added by HTTrack <meta http-equiv="content-type" content="text/html;charset=UTF-8" /> /Added by HTTrack -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="theme-color" content="#3ed2a7">
+<link rel="shortcut icon" href="favicon.png" />
+<title>Career4Hub</title>
+<link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'assets/vendors/liquid-icon/liquid-icon.min.css' %}" />
+<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" />
+<link rel="stylesheet" href="{% static 'css/theme-vendors.min.css' %}" />
+<link rel="stylesheet" href="{% static 'css/theme.min.css' %}" />
+<link rel="stylesheet" href="{% static 'css/themes/creative.css' %}" />
+
+<script async src="{% static 'assets/vendors/modernizr.min.js' %}"></script>
+</head>
+
+<section class="vc_row pt-90 pb-150" id="about">
+<div class="container">
+
+<div class="row d-flex flex-wrap align-items-center">
+
+<div class="lqd-column col-md-10 col-md-offset-1" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":1200,"delay":160,"initValues":{"translateY":50,"opacity":0},"animations":{"translateY":0,"opacity":1}}'>
+
+    <header class="fancy-title mb-60">
+        <h6 class="text-uppercase ltr-sp-2 font-size-12 font-weight-semibold text-secondary">OUR PREDICTION MODEL</h6>
+        <h2 class="mt-4 mb-4">Curious about your career options?</h2>
+        <p>Take this test to get your recommended career option. You’re good enough, right ?</p>
+
+        <form id="predict" method="post" action="predict">
+            {% csrf_token %}
+            <div class="row">
+                <div class="form-group col-md-3">
+                    <label for="input1">Percentage in Algorithms</label>
+                    <input type="number" class="form-control" min="0" max="100" id="input1" name="input1" placeholder="x%" required>
+                </div>
+                <div class="form-group col-md-5">
+                    <label for="input2">Percentage in Programming Concepts</label>
+                    <input type="number" class="form-control" min="0" max="100" id="input2" name="input2" placeholder="x%" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="input3">Percentage in Software Engineering</label>
+                    <input type="number" class="form-control" min="0" max="100" id="input3" name="input3" placeholder="x%" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-4">
+                    <label for="input4">Percentage in Computer Networks</label>
+                    <input type="number" class="form-control" min="0" max="100" id="input4" name="input4" placeholder="x%" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="input5">Percentage in Electronics Subjects</label>
+                    <input type="number" class="form-control" min="0" max="100" id="input5" name="input5" placeholder="x%" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="input6">Percentage in Computer Architecture</label>
+                    <input type="number" class="form-control" min="0" max="100" id="input6" name="input6" placeholder="x%" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-4">
+                    <label for="input7">Percentage in Mathematics</label>
+                    <input type="number" class="form-control" min="0" max="100" id="input7" name="input7" placeholder="x%" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="input8">Percentage in Communication skills</label>
+                    <input type="number" class="form-control" min="0" max="100" id="input8" name="input8" placeholder="x%" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="input0">Percentage in Operating Systems</label>
+                    <input type="number" class="form-control" min="0" max="100" id="input0" name="input0" placeholder="x%" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-3">
+                    <label for="input9">Hours working per day</label>
+                    <input type="number" class="form-control" min="0" max="24" id="input9" name="input9" placeholder="0-24 hours" required>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="input10">Logical quotient</label>
+                    <input type="number" class="form-control" min="0" max="10" id="input10" name="input10" placeholder="0-10 rating" required>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="input11">Hackathons attended</label>
+                    <input type="number" class="form-control" min="0" max="100" id="input11" name="input11" placeholder="x amount" required>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="input12">Coding skills</label>
+                    <input type="number" class="form-control" min="0" max="10" id="input12" name="input12" placeholder="0-10 rating" required>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="input13">Public speaking</label>
+                    <input type="number" class="form-control" min="0" max="10" id="input13" name="input13" placeholder="0-10 rating" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-4">
+                    <label for="input14">Can work long time before computer?</label>
+                    <select id="input14" name="input14" class="form-control">
+                        <option value="1" selected>Yes</option>
+                        <option value="0">No</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="input15">Self-learning capability?</label>
+                    <select id="input15" name="input15" class="form-control">
+                        <option value="1" selected>Yes</option>
+                        <option value="0">No</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="input16">Attended extra-courses?</label>
+                    <select id="input16" name="input16" class="form-control">
+                        <option value="1" selected>Yes</option>
+                        <option value="0">No</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="input17">Olympiads</label>
+                    <select id="input17" name="input17" class="form-control">
+                        <option value="1" selected>Yes</option>
+                        <option value="0">No</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-3">
+                    <label for="input18">Reading and writing skills</label>
+                    <select id="input18" name="input18" class="form-control">
+                        <option value="2" selected>Excellent</option>
+                        <option value="1">Medium</option>
+                        <option value="0">Poor</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="input19">Management or Technical</label>
+                    <select id="input19" name="input19" class="form-control">
+                        <option value="1" selected>Technical</option>
+                        <option value="0">Management</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="input20">Hard/Smart worker</label>
+                    <select id="input20" name="input20" class="form-control">
+                        <option value="1" selected>Smart worker</option>
+                        <option value="0">Hard worker</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="input21">Worked in teams?</label>
+                    <select id="input21" name="input21" class="form-control">
+                        <option value="1" selected>Yes</option>
+                        <option value="0">No</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+    </header>
+<button form="predict" type="submit" class="btn btn-solid text-uppercase circle btn-bordered border-thin font-size-14 font-weight-semibold" data-localscroll="true" data-localscroll-options='{"scrollBelowSection":true}'>
+<span>
+<span class="btn-txt">Predict</span>
+</span>
+</button>
+{% if prediction %}
+
+<h3> {{ prediction }}</h3>
+<h3> The report file of your result </h3>
+<p>PercentageAlgorithms:{{PercentageAlgorithms}}</p></br>
+<p>PercentageSoftware:{{PercentageSoftware}}</p></br>
+<p> PercentageNetworks:{{PercentageNetworks}}</p></br>
+<p>PercentageElectornics:{{PercentageElectornics}}</p></br>
+<p>PercentagComputer:{{PercentagComputer}}</p></br>
+<p>PercentageMathmatics:{{PercentageMathmatics}}</p></br>
+<p>PercentagCommunication:{{PercentagCommunication}}</p></br>
+<p>PercentageOperating:{{PercentageOperating}}</p></br>
+<P>HoursWorking:{{HoursWorking}}</p></br>
+<p> Logicalquotient:{{Logicalquotient}}</p></br>
+<p>Hackathonsattended:{{Hackathonsattended}}</p></br>
+<p>Codingskills:{{Codingskills}}</p></br>
+<p> Selflearningcapability:{{Selflearningcapability}}</p></br>
+<p>Canworklong:{{Canworklong}} </p></br>
+<p> Olympiads:{{Olympiads}} </p></br>
+<p> Readingwritingskills:{{Readingwritingskills}}</p></br>
+
+<p>ManagementTechnical:{{ManagementTechnical}} </p></br>
+<p> HardSmartworker:{{HardSmartworker}}</p></br>
+<p> Workedteams:{{Workedteams}}</p></br>
+{% endif %}
+</div>
+</div>
+</div>
+</section>
+    <!-- <section class="vc_row pt-200 pb-100" id="aboutus">
+<div class="container">
+<div class="row d-flex flex-wrap align-items-center">
+<div class="lqd-column col-md-5 hidden-xs hidden-sm">
+<div class="lqd-parallax-team-members">
+<div class="liquid-img-group-container">
+<div class="liquid-img-group-inner">
+<div class="liquid-img-group-single" data-roundness="4">
+<div class="liquid-img-group-img-container">
+<div class="liquid-img-container-inner" data-parallax="true" data-parallax-from='{"translateY":47}' data-parallax-to='{"translateY":-74}' data-parallax-options='{"overflowHidden": false, "easing": "linear"}'>
+<figure>
+<img src="{% static 'assets/demo/team/Ibrahim.jpeg' %}" alt="Team Member" />
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="liquid-img-group-container">
+<div class="liquid-img-group-inner">
+<div class="liquid-img-group-single" data-roundness="4">
+<div class="liquid-img-group-img-container">
+<div class="liquid-img-container-inner" data-parallax="true" data-parallax-from='{"translateY":83}' data-parallax-to='{"translateY":-94}' data-parallax-options='{"overflowHidden": false, "easing": "linear"}'>
+<figure>
+<img src="{% static 'assets/demo/team/Omkar.png' %}" alt="Team Member" />
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="liquid-img-group-container">
+<div class="liquid-img-group-inner">
+<div class="liquid-img-group-single" data-roundness="4">
+<div class="liquid-img-group-img-container">
+<div class="liquid-img-container-inner" data-parallax="true" data-parallax-from='{"translateY":167}' data-parallax-to='{"translateY":-151}' data-parallax-options='{"overflowHidden": false, "easing": "linear"}'>
+<figure>
+<img src="{% static 'assets/demo/team/Adeeba.jpeg' %}" alt="Team Member" />
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="lqd-column col-md-6 col-md-offset-1" data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":1200,"delay":160,"initValues":{"translateY":50,"opacity":0},"animations":{"translateY":0,"opacity":1}}'>
+<header class="fancy-title mb-60">
+<h6 class="text-uppercase ltr-sp-2 font-size-12 font-weight-semibold text-secondary">OUR COMMUNITY</h6>
+<h2 class="mt-4 mb-4">We are optimists who love to work together</h2>
+<p>Take your career to next level. Apply to our team and see what we can do together. You’re good enough, right ?</p>
+</header>
+<a href="https://github.com/Heisenberg3562/Student-Career-Prediction" class="btn btn-solid text-uppercase circle btn-bordered border-thin font-size-14 font-weight-semibold" data-localscroll="true" data-localscroll-options='{"scrollBelowSection":true}'>
+<span>
+<span class="btn-txt">Join the team</span>
+</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="vc_row pt-50 pb-60" id="news">
+<div class="container">
+<div class="row">
+<div class="lqd-column col-md-10 col-md-offset-1 text-center" data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":1200,"delay":100,"initValues":{"translateY":80,"opacity":0},"animations":{"translateY":0,"opacity":1}}'>
+<header class="fancy-title fancy-title-big mb-6">
+<h2 data-split-text="true" data-split-options='{"type":"lines"}'>
+Let’s create something extraordinary
+<br>
+<span class="font-size-2-15x lh-15 text-primary" data-fittext="true" data-fittext-options='{ "maxFontSize": 70, "minFontSize": 40, "compressor": 0.5 }'>together</span>
+</h2>
+</header>
+<a href="https://github.com/Heisenberg3562/Student-Career-Prediction" class="btn btn-solid text-uppercase circle btn-bordered border-thin font-size-14 font-weight-semibold" data-localscroll="true" data-localscroll-options='{"scrollBelowSection":true}'>
+<span>
+<span class="btn-txt">Start a project</span>
+</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="main-footer pt-80">
+<section class="bt-fade-white-015 pt-90 pb-90">
+<div class="container">
+<div class="row">
+<div class="lqd-column col-md-6 col-md-offset-3 text-center">
+<figure class="mb-40">
+<img src="{% static 'assets/img/logo/C4H2.svg' %}" alt="Logo">
+</figure>
+<p>© 2021 Career4Hub. All Rights Reserved.</p>
+</div>
+</div>
+</div>
+</section>
+</footer>
+</div> -->
+<script src="{% static 'assets/vendors/jquery.min.js' %}"></script>
+<script src="{% static 'assets/js/theme-vendors.js' %}"></script>
+<script src="{% static 'assets/js/theme.min.js' %}"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+{% if prediction %}
+<script>
+Swal.fire({
+  title: 'Prediction!',
+  text: "{{ prediction }}".replace('&amp;', '&').replace('&lt;', '<').replace('&gt;', '>').replace('&quot;', '"'),
+  icon: 'success',
+  confirmButtonText: 'Cool'
+})
+</script>
+{% endif %}
+<style type="text/css">
+	.lqd-buy-now {
+		position: fixed;
+		right: 30px;
+		bottom: 30px;
+		z-index: 999;
+	}
+	.lqd-buy-now-btn {
+		display: inline-flex;
+		padding: 15px 30px;
+		align-items: center;
+		border: none;
+		border-radius: 50em;
+		background: #fff;
+		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+		font-size: 15px;
+		line-height: 1.5em;
+		color: #000;
+		transition: all 0.3s;
+	}
+	.lqd-buy-now-btn svg {
+		margin-right: 12px;
+	}
+	.lqd-buy-now-btn:hover {
+		background: rgba(0, 0, 0, 0.8);
+		color: #fff;
+		transform: translateY(-2px);
+	}
+	.lqd-buy-now-btn:hover svg {
+		fill: currentColor;
+	}
+</style>
+</body>
+
+<!-- Mirrored from avehtml.liquid-themes.com/index-creative.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 17 Apr 2021 13:14:16 GMT -->
+</html>
